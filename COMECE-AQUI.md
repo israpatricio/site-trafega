@@ -13,6 +13,8 @@ claude
 
 O Claude Code lê o `CLAUDE.md` sozinho e já sabe o que é o site e quais são as regras.
 
+Outras CLIs também servem (Codex, Gemini CLI, Cursor, OpenCode): abra nesta pasta do mesmo jeito. Todas leem o `AGENTS.md`, que tem as regras e a seção "Onde parou".
+
 ## 2. Enviar para o GitHub
 
 Peça para o Claude Code: "dá push na main".
