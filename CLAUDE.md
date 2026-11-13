@@ -21,7 +21,12 @@ Este repositório é o site agenciatrafega.com.br, da Trafega, a agência de tr�
 - Azul do kit visual: #2229C8. Rosa #F6C7D9, marinho #141B8F e #0C1046, preto #1A1A1A, fundo #F5F6FA.
 - Fontes: Archivo Black (títulos), Alte Haas Grotesk (texto), Sarina (só em destaques pontuais: slogan final, selo "Método Maré", "publicitário").
 - Estilo: contorno preto de 1 px, botões em pílula, adesivos; Método Maré em linhas numeradas por letra.
-- Sem selos ou rótulos de enfeite. Mostrar o produto real. Títulos quebrados em lugares que façam sentido. Animação só quando ajuda a entender.
+- As 20 regras: 1) tirar selos de enfeite; 2) tirar rótulos redundantes; 3) não estilizar palavras aleatórias; 4) fonte mono só onde precisa; 5) usar um design system; 6) mostrar o produto de verdade; 7) aumentar o recurso principal; 8) agrupar pelo espaçamento; 9) títulos específicos; 10) destacar o CTA; 11) uma cor de destaque; 12) ícones consistentes; 13) tirar firulas; 14) raio interno = raio externo − padding; 15) contraste do texto; 16) quebrar bem as linhas dos títulos; 17) alinhar no olho; 18) números tabulares; 19) estados de carregamento; 20) animar só feedback útil.
+- Detalhes completos (imagens, estilo, como o Israel trabalha): `contexto/design.md`.
+
+## Contexto da Trafega (só no computador do Israel)
+
+A pasta `contexto/` não vai para o GitHub (está no `.gitignore`, porque o repositório é público). Ela tem `design.md`, `trafega.md` (preços, clientes, processo comercial), `icp.md` e `metodo-mare.md`. Leia o que for relevante antes de escrever texto ou mexer no design. Nunca copie preços ou dados de cliente que não estejam no site para dentro do `index.html` sem o Israel pedir.
 
 ## Partes da página que não são texto
 
