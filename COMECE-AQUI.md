@@ -7,7 +7,7 @@ Esta pasta já é o repositório https://github.com/israpatricio/site-trafega, c
 No Terminal:
 
 ```
-cd ~/Claude/site-trafega
+cd ~/Documents/site-trafega
 claude
 ```
 
@@ -20,7 +20,7 @@ Peça para o Claude Code: "dá push na main".
 Ou faça você mesmo no Terminal:
 
 ```
-cd ~/Claude/site-trafega
+cd ~/Documents/site-trafega
 git push origin main
 ```
 
