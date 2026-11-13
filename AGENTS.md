@@ -8,16 +8,15 @@ Este repositório é o site agenciatrafega.com.br, da Trafega, a agência de tr�
 
 Atualize esta seção sempre que terminar uma sessão de trabalho.
 
-- **13/11/2026:** repositório completo no GitHub (https://github.com/israpatricio/site-trafega), branch `main` em dia com o computador do Israel.
-- **Próximo passo:** ligar o site ao repositório seguindo `PUBLICAR-NO-SERVIDOR.md` (uma vez só). Precisa de um navegador com acesso ao Portainer, logado pelo próprio Israel.
+- **13/11/2026:** site ligado ao repositório. A stack "site" no Portainer tem o serviço `sync`, que puxa a `main` a cada minuto para o volume `site_repo`, e o nginx usa a config `site_nginx_v2`, que devolve 404 para `.git` e arquivos `.md`. Conferido: página, 14 imagens, fontes, mar animado, privacidade, quiz e PDFs.
 - **Pendente:** trocar a foto do farol (`img/farol.webp`), que é provisória e sem licença confirmada.
-- O site no ar hoje é a versão publicada em 13/11 às 19h51, igual a este repositório.
+- Para voltar ao jeito antigo, veja "Se der errado" no `PUBLICAR-NO-SERVIDOR.md`. As configs `site_nginx_v1`, `site_landing_v3` e `site_img_*_v1` continuam guardadas no Swarm.
 
 ## Como o site chega no ar
 
 - O site roda na VPS da Trafega (Hostinger, Docker Swarm), na stack "site" do Portainer: https://porto.agenciatrafega.com.br
-- **Situação em 13/11/2026:** o site no ar ainda NÃO lê este repositório. A página está numa config do Swarm (`site_landing_v3`) e as imagens em configs `site_img_*_v1`. Para ligar o repositório ao site, siga `PUBLICAR-NO-SERVIDOR.md` uma vez.
-- Depois de ligado, basta dar push na branch `main`. Um serviço na VPS puxa o repositório a cada minuto.
+- Desde 13/11/2026, o site lê este repositório: basta dar push na branch `main`, e o serviço `sync` da VPS publica em até 1 minuto.
+- Ficam fora do repositório, em configs do Swarm: `privacidade.html` (`site_privacidade_v2`), o quiz do analise.agenciatrafega.com.br (`site_quiz_v1`) e os PDFs de `/materiais`.
 - Só dê push quando o Israel pedir.
 
 ## Regras para mexer no texto
